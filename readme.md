@@ -1,3 +1,9 @@
+## Design:
+
+![Design](/Design.png "Design")
+
+
+
 ## Learnings from the project:-
 
     - How to build nav bar? ul (list-style-type: none) > li's > a.
