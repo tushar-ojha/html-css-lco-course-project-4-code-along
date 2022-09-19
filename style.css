@@ -1,0 +1,146 @@
+
+body {
+    background-image: url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 5%;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.nav-menu-icon{
+    display: none;
+}
+
+
+.brand-img{
+    flex: 1;
+    margin: auto;
+}
+
+.nav-logo{
+    display: block;
+}
+
+.brand-img img{
+    height: 80px;
+}
+
+.nav-button{
+    background-color: #E03B8B;
+    border: none;
+    padding: 5px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav-items{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+/* Navbar ends here!  */
+
+
+
+
+/* Container CSS starts here */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+.col{
+    display: flex;
+    flex: 0.5;
+    min-height: 100%;
+}
+
+.col-1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.col-1 p{
+    font-size: 25px;
+}
+
+.col-1 h1 {
+    font-size: 75px;
+    margin: 20px 0;
+}
+
+.google-play-img{
+    height: 90px;
+}
+
+
+.col-2{
+    overflow: hidden;
+}
+
+.phone-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80%;
+
+}
+/* Container section done */
+
+
+/* Starting with media queries */
+@media screen and (max-width: 1230px) {
+    .phone-img{
+        height: 60%;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .nav-menu-icon {
+        display: block;
+        margin: auto;
+    }
+
+    i {
+        color: white;
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .phone-img{
+        display: none;
+    }
+
+    .google-play-img {
+        height: 50px;
+    }
+}
+
+
+
